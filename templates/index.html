@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>資格試験勉強サイト</title>
+    </head>
+
+    <body>
+        
+        <h>・ログインはこちらから</h>
+
+        <form method="post" action="/login"><!--ログインアクション-->
+            <div>
+                <label for="id">　　　　ID:</label>
+                <input type="text" id="id" name="id" size="20">
+            </div>
+            <div>
+                <label for="password">パスワード:
+                <input type="text" id="password" name="password" size="20">
+            </div>
+            <button type="submit">ログイン</button>  
+        </form>     
+        
+        <form method="get" action="/nextpage">
+            <button type="submit">新規登録へ</button>
+        </form>
+        
+    </body>    
+</html>

@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>資格試験勉強サイトユーザ登録</title>      
+    </head>
+
+    <body>
+        <h1>新規登録画面</h1>
+        <p>・IDとパスワードを設定してください</p>
+<!--ユーザテーブルへユーザ情報を登録-->
+        <form method="post" action="signup"><!--urlの指定/無し？-->
+            <label for="id">　　　　ID</label>
+            <input type="text" name="id">
+            <label for="password">パスワード</label>
+            <input type="password" name="password">
+            <p>・職業と目指している資格の正式名称を記入してください</p>
+            <label for="job">職業</label>
+            <input type="text" name="job">
+            <label for="license">目指す資格</label>
+            <input type="text" name="license">
+            <input type="submit" value="登録">
+        </form>
+    </body>
+</html>
+
