@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>マイページ</title>
+    </head>
+<!--目標/累計勉強時間表示/勉強時間入力/達成した場合達成後の画面へ遷移-->
+    <body>
+        <h> こんにちは! id:{{id|safe}}</h>            
+        <p>目標の資格:{{license|safe}}</p> 
+        <p>累計勉強時間:{{total|safe}}</p>
+        <form methods="get" action="/mypage">
+            <p>本日の勉強時間の入力へ</p>
+            <input type="submit" value="移動">
+        </form>
+    </body>
+</html>
