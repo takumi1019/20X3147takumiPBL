@@ -5,22 +5,26 @@
     </head>
 
     <body>
-        
-        <h>・ログインはこちらから</h>
+        <h1>資格試験勉強サイト</h1>
+        <p>ここでは資格取得に向けて勉強する人のための勉強時間管理ができます。
+            他にも同じ資格を目指している人の勉強時間も参考にできます。(多分)</p>
+        <h2><font color="red">{{msg|safe}}</font></h2>
+        <h2>・ログインはこちらから</h2>
+
 
         <form method="post" action="/login"><!--ログインアクション-->
             <div>
                 <label for="id">　　　　ID:</label>
-                <input type="text" id="id" name="id" size="20">
+                <input type="text" id="id" name="id" size="20" required>
             </div>
             <div>
-                <label for="password">パスワード:
-                <input type="text" id="password" name="password" size="20">
+                <label for="password">パスワード:</label>
+                <input type="password" id="password" name="password" required>
             </div>
             <button type="submit">ログイン</button>  
         </form>     
         
-        <form method="get" action="/nextpage">
+        <form methods="get" action="/login">
             <button type="submit">新規登録へ</button>
         </form>
         
