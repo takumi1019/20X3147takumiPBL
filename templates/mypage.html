@@ -7,10 +7,18 @@
     <body>
         <h> こんにちは! id:{{id|safe}}</h>            
         <p>目標の資格:{{license|safe}}</p> 
-        <p>累計勉強時間:{{total|safe}}</p>
-        <form methods="get" action="/mypage">
-            <p>本日の勉強時間の入力へ</p>
-            <input type="submit" value="移動">
+        <p>累計勉強時間:{{total|safe}}分</p>
+        <form methods="get" action="/time">
+            <button type="submit">勉強時間入力</button>
+        </form>
+
+        <form methods="get" action="/to_sch">
+            <button type="submit">情報検索画面へ</button>
+            
+        </form>
+
+        <form methods="get" action="/to_log">
+            <button type="submit">ログイン画面へ戻る</button>
         </form>
     </body>
 </html>
