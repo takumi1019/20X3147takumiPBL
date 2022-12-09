@@ -5,6 +5,7 @@
     </head>
 
     <body>
+        {{msg|safe}}
         <h1>新規登録画面</h1>
         <p>・IDとパスワードを設定してください</p>
 <!--ユーザテーブルへユーザ情報を登録-->
@@ -19,6 +20,10 @@
             <label for="license">目指す資格</label>
             <input type="text" name="license">
             <input type="submit" value="登録">
+        </form>
+        <form methods="get" action="/to_log">
+            <button type="submit">ログイン画面へ戻る</button>
+            
         </form>
     </body>
 </html>
