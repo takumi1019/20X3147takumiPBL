@@ -6,9 +6,10 @@
     <body>
         id:{{id|safe}}
         <form method="POST" action="/time_e">
-            <label for="work_t">勉強時間(分)</label>
+            <label for="work_t">勉強時間(時間)</label>
             <input type="number" name="work_t" id="work_t">
             <input type="submit" value="入力">
+            <input type="hidden" name="mypage" valuse="{{token|safe}}">
         </form>
     </body>
 </html>
